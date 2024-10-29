@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Database Information</title>
+</head>
+<body>
+<center>
+    <h1>Database Information</h1>
+    <table border="2px">
+        <tr>
+            <td>Name</td>
+            <td>Roll</td>
+            <td>Marks</td>
+            <td>DOB</td>
+            <td>E-mail</td>
+        </tr>
+        {% for i in stud %}
+        <tr>
+            <td>{{ i.name }}</td>
+            <td>{{ i.roll }}</td>
+            <td>{{ i.marks }}</td>
+            <td>{{ i.dob }}</td>
+            <td>{{ i.email }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>

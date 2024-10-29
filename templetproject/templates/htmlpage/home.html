@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/1.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1><u>{{ Name }}'s favourites</u></h1>
+    </center>
+    <div>
+        <h2>Player: {{ Player }}</h2>
+        <img src="{% static 'image/dhoni.jpeg' %}" alt="not available" class="img-style"><br>
+        <a href="https://en.wikipedia.org/wiki/MS_Dhoni" class="link-style">Click Here For More Details</a>
+        <hr>
+        <h2>FavAnimal: {{ Animal }}</h2>
+        <img src="{% static 'image/monkey.jpeg' %}" alt="not available" class="img-style"><br>
+        <a href="https://en.wikipedia.org/wiki/MS_Dhoni" class="link-style">Click Here For More Details</a><br>
+        <hr>
+        <h2>FavSub: {{ subject }}</h2>
+        <img src="{% static 'image/python.jpg' %}" alt="not available" style="height:250px;" class="img-style"><br>
+        <a href="https://en.wikipedia.org/wiki/MS_Dhoni" class="link-style">Click Here For More Details</a>
+        <hr>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><b><u>Student Information</u></b></h1>
+    <table border="2">
+        <tr>
+        <td><b>ID</b></td>
+        <td><b>Name</b></td>
+        <td><b>phone</b></td>
+        <td><b>salary</b></td>
+        <td><b>Job</b></td>
+        </tr>
+    {%for i in emp%}
+    <tr>
+        <td>{{i.eid}}</td>
+        <td>{{i.ename}}</td>
+        <td>{{i.ephone_no}}</td>
+        <td>{{i.esal}}</td>  
+        <td>{{i.ejob}}</td>
+    </tr>
+    {%endfor%}
+    </table>
+</body>
+</html>
