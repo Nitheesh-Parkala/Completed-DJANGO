@@ -1,0 +1,98 @@
+mkdir Django
+     |
+cd Django
+     |
+django-admin startproject firstproject
+     |
+cd firstproject
+     |
+python manage.py startapp myapp
+     |
+python manage.py startapp myapp1 [we can create a multiple app in same project] This command is optional if you dont want to create the multiple app.
+     |
+python mange.py runserver
+     |
+
+subline Text editor
+===================
+     |
+    File 
+     |
+open folder
+     |
+select the path
+     |
+go to the settings.py(projects)
+     |
+installed Apps
+     |
+Add yours applications[myapp]
+     |
+Go to the views.py[Application(myapp)]
+     |
+write a simple statement program
+    [python code]
+     |
+Go to the urls.py [project(firstprojet)]
+     |
+import views.py
+     |
+Set the path for corresponding views
+     |
+cmd prompt
+     |
+runserver
+     |
+
+link will appear
+     |
+copy the link
+     |
+paste it in the browser url along with link we must add our wnd point that is in the urls.py
+============================================================================================
+
+cmd prompt
+=========
+django-admin startproject templateproject
+cd templateproject
+python manage.py startapp myapp
+
+Go to settings.py[at templateproject]
+installed apps
+myapp
+
+               |
+installed Apps
+               |
+Add your application_name[myapp]
+
+
+open in the file explore means[explorer .]
+In the templateproject create one more folder called templates & inside the templates create one more folder called htmlpage and inside this create a file called 1.html
+
+
+Go to settings.py[at templateproject]
+import os
+TEMPLATE_DIR=os.path.join(BASE_DIR,'templates')
+Templates=
+DIR=[TEMPLATE_DIR]
+
+
+views.py
+==========
+def myview(request):
+   return render(request,htmlpage/1.html)
+
+urls.py
+=======
+from myapp.views import view
+path['myapp/.myview]
+
+
+py manage.py runserver
+
+
+
+
+
+
